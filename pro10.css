@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ h1{
+    font-size: 100px;
+    color: white;
+   backdrop-filter: brightness(.5);
+   letter-spacing: 2px;
+}
+ .btn{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    font-size: 30px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: 1s background-color ;
+ }
+ .btn:hover{
+    background-color: white;
+   color: black;
+}
+
+
+
+
+
+
+.split {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.split.left{
+   position: absolute;
+left: 0;
+background-color: pink;
+background-image: url("https://www.mymac.dz/wp-content/uploads/2021/01/iphone-11-vert.jpg");
+background-size: cover;
+}
+.split.right{
+  position: absolute;
+  right: 0;
+  background-color: lightblue;
+  background-image: url("https://www.zdnet.com/a/img/resize/59d9448270bdf9642e4f5f6f323d2a1e94361c3d/2024/02/02/1bfa7d30-112c-4906-83a7-ce12551b7b16/galaxy-s24-ultra.jpg?auto=webp&fit=crop&height=1200&width=1200");
+  background-size: cover;
+}
+.active-left .left{
+   width: 75%;
+}
+.active-left .right{
+    width: 25%;
+}
+.active-right .right{
+    width: 75%;
+ }
+ .active-right .left{
+     width: 25%;
+ }
+ .left , .right{
+    transition: width 1s ease-in-out;
+ }
